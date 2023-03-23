@@ -39,7 +39,7 @@ body {
     padding: 10px 30px;
     margin: 0 20px;
     line-height: 80px;
-    transition: 0.5s;
+    transition: .5s;
     font-size: 20px;
 }
 
@@ -133,6 +133,7 @@ body {
     padding: 40px;
     color: white;
     transition: .5s;
+    opacity: 0;
 }
 
 .project__title {
@@ -158,7 +159,7 @@ body {
 .project__btn {
     height: 40px;
     text-transform: capitalize;
-    font-size: 10px;
+    font-size: 18px;
     border: none;
     background: #000;
     color: white;
@@ -216,7 +217,7 @@ body {
 .donwload__cv__btn {
     position: absolute;
     bottom: 20px;
-    left: 50px;
+    left: 50%;
     transform: translateX(-50%);
     color: white;
     padding: 10px 20px;
@@ -276,7 +277,7 @@ body {
 .skills__info {
     text-align: center;
     opacity: 0.5;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
@@ -291,7 +292,7 @@ body {
     align-items: center;
     font-size: 22px;
     border-radius: 50%;
-    border: 10px;
+    border: 10px solid;
 }
 
 .skills__card:nth-child(1) .skills__level {
@@ -326,7 +327,7 @@ body {
     width: 45%;
     padding: 30px;
     border-radius: 10px;
-    margin: 0;
+    margin: -80px 0;
     display: block;
     color: white;
     background: #f00;
@@ -341,7 +342,7 @@ body {
     content: '';
     position: absolute;
     top: 50%;
-    left: -15px;
+    left: -15%;
     transform: translateY(-50%);
     height: 20px;
     width: 20px;
@@ -357,7 +358,7 @@ body {
     transform: translateY(-50%);
     height: 2px;
     width: 7%;
-    color: white;
+    background: white;
     z-index: -1;
 }
 
@@ -365,7 +366,7 @@ body {
     content: '';
     position: absolute;
     top: 50%;
-    right: -13px;
+    right: -13%;
     transform: translateY(-50%);
     height: 20px;
     width: 20px;
@@ -381,7 +382,7 @@ body {
     transform: translateY(-50%);
     height: 2px;
     width: 7%;
-    color: white;
+    background: white;
     z-index: -1;
 }
 
@@ -395,6 +396,14 @@ body {
 
 .timeline__card:nth-child(4), .timeline__card:nth-child(4):before {
     background: #3dca5c;
+}
+
+.timeline__card:nth-child(5), .timeline__card:nth-child(4):before {
+    background: #565252;
+}
+
+.timeline__card:nth-child(6), .timeline__card:nth-child(4):before {
+    background: #4fa0ff;
 }
 
 .timeline__card:nth-child(even) .timeline__card__body:before {

@@ -1,19 +1,19 @@
-const links = document.querySelector('.link');
-const sections = document.querySelector('section');
+const links = document.querySelectorAll('.link');
+const sections = document.querySelectorAll('section');
 
-letActiveLink = 0;
+let ActiveLink = 0;
 
 links.forEach((link, i) => {
     link.addEventListener('click', () => {
-        if (activeLink != i) {
-            links[activeLink].classList.remove('active');
+        if (ActiveLink != i) {
+            links[ActiveLink].classList.remove('active');
             link.classList.add('active');
-            sections[activeLink].classList.remove('active');
+            sections[ActiveLink].classList.remove('active');
 
             setTimeout (() => {
-                activeLink = i;
+                ActiveLink = i;
                 sections[i].classList.add('active');
-            }, 1000)
+            }, 1000);
         }
     })
 })
