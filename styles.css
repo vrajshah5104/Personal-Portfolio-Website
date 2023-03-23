@@ -60,7 +60,9 @@ body {
 }
 
 .home__section.active
-.project__section.active {
+.project__section.active
+.about__section.active
+.contact__section.active {
     position: relative;
     opacity: 1;
     z-index: 8;
@@ -180,7 +182,8 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 150px 100px 0;
-    position: relative;
+    position: fixed;
+    opacity: 0;
     top: 0;
     transition: 1s;
 }
@@ -409,4 +412,66 @@ body {
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+.contact__section {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 1s;
+    padding: 100px 150px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+#msg {
+    resize: none;
+    height: 280px;
+    font-family: sans-serif;
+}
+
+.form__submit__btn {
+    color: white;
+    background: #ff4f4f;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.map__section {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.map__section iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
